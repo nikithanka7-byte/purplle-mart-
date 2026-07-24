@@ -108,6 +108,127 @@ This project demonstrates the application of **Database Management System (DBMS)
 - Admin Management
 - Inventory Management
 
+
 ---
 
+# 📅 Week 3 – Entity Relationship (ER) Diagrams
+
+## 📌 Objective
+
+Design the Entity Relationship (ER) diagrams for the Purplle Online Beauty Shopping Management System by identifying entities, attributes, primary keys, foreign keys, and relationships.
+
+### 📚 Topics Covered
+
+- ER Diagram Design
+- Entity Identification
+- Attributes
+- Primary Keys (PK)
+- Foreign Keys (FK)
+- Relationships
+- Cardinality
+- Overall ER Diagram
+
+### 🗂 Entities
+
+- Customer
+- Category
+- Brand
+- Seller
+- Product
+- Product Variant
+- Cart
+- Cart Item
+- Wishlist
+- Wishlist Item
+- Coupon
+- Orders
+- Order Details
+- Payment
+- Delivery
+- Review
+- Admin
+
+### 🔗 Relationships
+
+- Customer → Orders
+- Customer → Cart
+- Customer → Wishlist
+- Customer → Review
+- Category → Product
+- Brand → Product
+- Seller → Product
+- Product → Product Variant
+- Cart → Cart Item
+- Wishlist → Wishlist Item
+- Orders → Order Details
+- Product Variant → Order Details
+- Seller → Order Details
+- Coupon → Orders
+- Orders → Payment
+- Orders → Delivery
+- Product → Review
+- Admin → Product
+
+### 📚 Learning Outcomes
+
+- Identified all entities and their attributes.
+- Designed ER diagrams for each entity.
+- Established relationships between entities.
+- Applied cardinality constraints.
+- Developed the overall ER diagram for the system.
+
+---
+# 📅 Week 4 – Functional Dependencies, Redundancy & Data Anomalies
+
+## 📌 Objective
+
+Analyze the functional dependencies of the Purplle Online Beauty Shopping Management System and identify data redundancy and database anomalies to improve the database design and maintain data integrity.
+
+---
+
+## 📚 Topics Covered
+
+- Functional Dependencies
+- Primary Keys
+- Candidate Keys
+- Unique Keys
+- Data Redundancy Analysis
+- Insertion Anomalies
+- Update Anomalies
+- Deletion Anomalies
+- Database Consistency
+
+---
+
+## 📊 Tables Analyzed
+
+- Customer
+- Category
+- Brand
+- Seller
+- Product
+- Product Variant
+- Cart
+- Cart Item
+- Wishlist
+- Wishlist Item
+- Coupon
+- Orders
+- Order Details
+- Payment
+- Delivery
+- Review
+- Admin
+
+---
+
+## 🎯 Learning Outcomes
+
+- Identified functional dependencies for all database tables.
+- Analyzed redundant data and methods to reduce duplication.
+- Identified insertion, update, and deletion anomalies.
+- Improved database consistency and integrity.
+- Prepared the database for normalization and implementation.
+
+---
 
