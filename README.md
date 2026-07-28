@@ -231,4 +231,103 @@ Analyze the functional dependencies of the Purplle Online Beauty Shopping Manage
 - Prepared the database for normalization and implementation.
 
 ---
+# 📅 Week 5 – CRUD Operations
+---
+
+## 📌 Objective
+
+To implement the basic **CRUD (Create, Read, Update, Delete)** operations using SQL on the Customer table of the Purplle Online Beauty Shopping Management System. This helps in managing customer information efficiently and demonstrates the core database operations.
+
+---
+
+## 📚 Topics Covered
+
+- CREATE TABLE
+- INSERT Records
+- SELECT Queries
+- UPDATE Queries
+- DELETE Queries
+- SQL Constraints
+- COMMIT Transaction
+
+---
+
+## 🛠 CRUD Operations Performed
+
+### ✅ Create (C)
+- Created the **Customer** table.
+- Applied constraints such as:
+  - Primary Key
+  - Unique Key
+  - NOT NULL
+  - CHECK Constraint
+
+### ✅ Read (R)
+- Displayed all customer records.
+- Retrieved single and multiple customer records using SELECT queries.
+
+### ✅ Update (U)
+- Updated customer details such as:
+  - Phone Number
+  - City
+
+### ✅ Delete (D)
+- Deleted customer records using the DELETE statement.
+- Removed records based on Customer ID.
+
+---
+
+## 🗄 Table Used
+
+**Customer**
+
+### Attributes
+- Customer_ID
+- First_Name
+- Last_Name
+- Gender
+- Email
+- Phone
+- Address
+- City
+- State
+- Pincode
+
+---
+
+## 🎯 Learning Outcomes
+
+- Created a database table using SQL.
+- Inserted multiple records into the table.
+- Retrieved data using SELECT queries.
+- Updated existing records using UPDATE.
+- Deleted records using DELETE.
+- Applied SQL constraints to maintain data integrity.
+- Understood the implementation of CRUD operations in a relational database.
+
+---
+
+## 🛠 Technologies Used
+
+- Oracle SQL Plus
+- SQL
+- DBMS
+- Visual Studio Code
+
+---
+
+## 📂 Repository Structure
+
+```
+Week-5-CRUD-Operations/
+│
+├── README.md
+├── Create_Table.sql
+├── Insert_Records.sql
+├── Select_Queries.sql
+├── Update_Queries.sql
+└── Delete_Queries.sql
+```
+
+
 
