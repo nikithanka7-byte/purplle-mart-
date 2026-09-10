@@ -330,4 +330,70 @@ Week-5-CRUD-Operations/
 ```
 
 
+## WEEK 6 – PRODUCT AND CATEGORY MANAGEMENT SYSTEM
+
+The Purplle Online Beauty Shopping Database Management System is designed to efficiently manage product and category information.
+
+The system uses two related tables, **Category** and **PurplleProduct**, to store and organize beauty product details. Primary Key and Foreign Key constraints are used to maintain data integrity.
+
+SQL operations such as **INSERT, UPDATE, DELETE, and SELECT** are performed on the product data. Category-wise product reports are generated to analyze the products and stock available under each category.
+
+---
+
+## 2. Objectives
+
+- Design tables for Product and Category.
+- Define Primary Key and Foreign Key relationships.
+- Store product name, category, price, and stock.
+- Perform product insertion, updating, and deletion.
+- Generate category-wise product reports.
+- Maintain data integrity using constraints.
+
+---
+
+## 3. Table Design
+
+### 3.1 Category Table
+
+| Attribute | Data Type | Key | Description |
+|-----------|-----------|-----|-------------|
+| Category_ID | INT | PK | Unique category ID |
+| Category_Name | VARCHAR2(100) | UNIQUE | Name of the category |
+| Description | VARCHAR2(255) | - | Category description |
+
+### 3.2 PurplleProduct Table
+
+| Attribute | Data Type | Key | Description |
+|-----------|-----------|-----|-------------|
+| Product_ID | INT | PK | Unique product ID |
+| Product_Name | VARCHAR2(100) | - | Name of the product |
+| Category_ID | INT | FK | References Category |
+| Brand_ID | INT | - | Brand identifier |
+| Seller_ID | INT | - | Seller identifier |
+| Admin_ID | INT | - | Admin identifier |
+| Description | VARCHAR2(255) | - | Product description |
+| Expiry_Date | DATE | - | Product expiry date |
+| Price | NUMBER(10,2) | - | Product price |
+| Stock | INT | - | Available stock |
+
+---
+
+## 4. Primary and Foreign Key Relationship
+
+### Category → PurplleProduct
+
+- `Category.Category_ID` → Primary Key
+- `PurplleProduct.Product_ID` → Primary Key
+- `PurplleProduct.Category_ID` → Foreign Key
+- `PurplleProduct.Category_ID` references `Category.Category_ID`
+- Relationship: **One-to-Many (1:M)**
+
+### Relationship
+
+```text
+CATEGORY (1) ─────────── (M) PURPLLEPRODUCT
+
+Category_ID (PK)  →  Category_ID (FK)
+
+
 
