@@ -396,4 +396,116 @@ CATEGORY (1) ─────────── (M) PURPLLEPRODUCT
 Category_ID (PK)  →  Category_ID (FK)
 
 
+# **WEEK 7 – SELLER AND INVENTORY MANAGEMENT SYSTEM**
+
+## **1. Introduction**
+
+The **Purplle Online Beauty Shopping Database Management System** is designed to efficiently manage **seller, product, and inventory information**.
+
+This week focuses on creating and managing the **Seller** and **Inventory** tables along with the existing **PurplleProduct** table. **Primary Key** and **Foreign Key** constraints are used to maintain data integrity and establish relationships between sellers, products, and inventory.
+
+SQL operations such as **INSERT, UPDATE, and SELECT** are used to manage seller and inventory information. Inventory reports are generated to monitor **stock levels** and identify **available and unavailable products**.
+
+---
+
+## **2. Objectives**
+
+* Create **Seller** and **Inventory** tables.
+* Define **Primary Key** and **Foreign Key** constraints.
+* Establish relationships between **sellers, products, and inventory**.
+* Maintain **seller and product information**.
+* Track **product stock quantities**.
+* Identify **available and unavailable products**.
+* Perform **INSERT, UPDATE, and SELECT** operations.
+* Generate **inventory status reports**.
+* Maintain **data integrity using constraints**.
+
+---
+
+## **3. Table Design**
+
+### **3.1 Seller Table**
+
+| **Attribute**         | **Data Type** | **Key**    | **Description**           |
+| --------------------- | ------------- | ---------- | ------------------------- |
+| **Seller_ID**         | NUMBER        | **PK**     | Unique seller ID          |
+| **Seller_Name**       | VARCHAR2(100) | -          | Name of the seller        |
+| **Email**             | VARCHAR2(100) | **UNIQUE** | Seller email address      |
+| **Phone**             | VARCHAR2(15)  | -          | Seller contact number     |
+| **GSTIN**             | VARCHAR2(20)  | **UNIQUE** | Seller GST identification |
+| **Warehouse_Address** | VARCHAR2(255) | -          | Seller warehouse address  |
+| **Rating**            | NUMBER(3,2)   | -          | Seller rating             |
+
+### **3.2 Inventory Table**
+
+| **Attribute**      | **Data Type** | **Key** | **Description**               |
+| ------------------ | ------------- | ------- | ----------------------------- |
+| **Inventory_ID**   | NUMBER        | **PK**  | Unique inventory ID           |
+| **Product_ID**     | NUMBER        | **FK**  | References **PurplleProduct** |
+| **Seller_ID**      | NUMBER        | **FK**  | References **Seller**         |
+| **Stock_Quantity** | NUMBER        | -       | Available product quantity    |
+| **Product_Status** | VARCHAR2(20)  | -       | Available or Unavailable      |
+| **Last_Updated**   | DATE          | -       | Last inventory update date    |
+
+---
+
+## **4. Primary and Foreign Key Relationship**
+
+### **Seller → Inventory**
+
+* `Seller.Seller_ID` is the **Primary Key**.
+* `Inventory.Inventory_ID` is the **Primary Key**.
+* `Inventory.Seller_ID` is a **Foreign Key**.
+* `Inventory.Seller_ID` references `Seller.Seller_ID`.
+* Relationship: **One-to-Many (1:M)**.
+
+### **PurplleProduct → Inventory**
+
+* `PurplleProduct.Product_ID` is the **Primary Key**.
+* `Inventory.Product_ID` is a **Foreign Key**.
+* `Inventory.Product_ID` references `PurplleProduct.Product_ID`.
+
+### **Relationship Diagram**
+
+```text
+SELLER (1)
+     |
+     | Seller_ID (PK)
+     |
+     ↓
+INVENTORY (M)
+     |
+     | Product_ID (FK)
+     |
+     ↓
+PURPLLEPRODUCT (1)
+```
+
+---
+
+## **9. SQL Operations Covered**
+
+| **Operation** | **Purpose**                                 |
+| ------------- | ------------------------------------------- |
+| **INSERT**    | Add seller and inventory records            |
+| **UPDATE**    | Modify stock and product status             |
+| **DELETE**    | Remove inventory records                    |
+| **SELECT**    | Retrieve seller and inventory information   |
+| **JOIN**      | Combine seller, product, and inventory data |
+| **GROUP BY**  | Generate inventory summary reports          |
+| **SUM()**     | Calculate total stock                       |
+| **COUNT()**   | Count available/unavailable products        |
+
+---
+
+## **10. Result**
+
+The **Seller and Inventory Management System** successfully maintains **seller-product information**, tracks **stock quantities**, identifies **available and unavailable products**, and generates **inventory status reports**.
+
+---
+
+
+
+
+
 
