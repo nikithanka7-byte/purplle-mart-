@@ -1,4 +1,4 @@
-### 💄 Purplle Online Beauty Shopping Management System
+###  Purplle Online Beauty Shopping Management System
 The Purplle Online Beauty Shopping Management System is a Database Management System (DBMS) project that manages the online sale of beauty and personal care products. It stores and organizes customer details, product information, orders, payments, inventory, and delivery records in a database, making the shopping process efficient, secure, and easy to manage.
 
 
@@ -7,7 +7,7 @@ A **Database Management System (DBMS)** mini project that models the database de
 
 ---
 
-## 📖 Project Description
+##  Project Description
 
 The **Purplle Online Beauty Shopping Management System** is designed to manage the complete workflow of an online beauty store. It provides a structured database for managing customers, beauty products, categories, shopping carts, orders, payments, deliveries, and administrative operations.
 
@@ -15,9 +15,9 @@ This project demonstrates the application of **Database Management System (DBMS)
 
 ---
 
-# 📅 Week 1 – Requirement Analysis
+#  Week 1 – Requirement Analysis
 
-### 📌 Topics Covered
+### Topics Covered
 
 - Project Introduction
 - Objectives
@@ -30,7 +30,7 @@ This project demonstrates the application of **Database Management System (DBMS)
 - Stakeholders
 - Conclusion
 
-### 📚 Learning Outcomes
+###  Learning Outcomes
 
 - Understood business requirements of an online beauty shopping platform.
 - Identified system requirements.
@@ -40,9 +40,9 @@ This project demonstrates the application of **Database Management System (DBMS)
 
 ---
 
-# 📅 Week 2 – Entity Analysis
+# Week 2 – Entity Analysis
 
-### 📌 Topics Covered
+###  Topics Covered
 
 - Entity Identification
 - Attribute Identification
@@ -52,7 +52,7 @@ This project demonstrates the application of **Database Management System (DBMS)
 - Cardinality
 - Database Design
 
-### 📊 Entities Identified
+###  Entities Identified
 
 - Customer
 - Category
@@ -64,7 +64,7 @@ This project demonstrates the application of **Database Management System (DBMS)
 - Delivery
 - Admin
 
-### 🔗 Relationships
+###  Relationships
 
 - Customer → Orders
 - Customer → Cart
@@ -76,7 +76,7 @@ This project demonstrates the application of **Database Management System (DBMS)
 - Orders → Delivery
 - Admin → Product
 
-### 📚 Learning Outcomes
+###  Learning Outcomes
 
 - Identified entities and attributes.
 - Defined Primary Keys and Foreign Keys.
@@ -85,7 +85,7 @@ This project demonstrates the application of **Database Management System (DBMS)
 - Prepared the foundation for ER Diagram and database implementation.
 
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Design an efficient relational database.
 - Manage customer and product information.
@@ -96,7 +96,7 @@ This project demonstrates the application of **Database Management System (DBMS)
 
 ---
 
-## ✨ Features
+##  Features
 
 - Customer Management
 - Product Management
@@ -111,13 +111,13 @@ This project demonstrates the application of **Database Management System (DBMS)
 
 ---
 
-# 📅 Week 3 – Entity Relationship (ER) Diagrams
+#  Week 3 – Entity Relationship (ER) Diagrams
 
-## 📌 Objective
+##  Objective
 
 Design the Entity Relationship (ER) diagrams for the Purplle Online Beauty Shopping Management System by identifying entities, attributes, primary keys, foreign keys, and relationships.
 
-### 📚 Topics Covered
+###  Topics Covered
 
 - ER Diagram Design
 - Entity Identification
@@ -148,7 +148,7 @@ Design the Entity Relationship (ER) diagrams for the Purplle Online Beauty Shopp
 - Review
 - Admin
 
-### 🔗 Relationships
+###  Relationships
 
 - Customer → Orders
 - Customer → Cart
@@ -169,7 +169,7 @@ Design the Entity Relationship (ER) diagrams for the Purplle Online Beauty Shopp
 - Product → Review
 - Admin → Product
 
-### 📚 Learning Outcomes
+###  Learning Outcomes
 
 - Identified all entities and their attributes.
 - Designed ER diagrams for each entity.
@@ -178,15 +178,15 @@ Design the Entity Relationship (ER) diagrams for the Purplle Online Beauty Shopp
 - Developed the overall ER diagram for the system.
 
 ---
-# 📅 Week 4 – Functional Dependencies, Redundancy & Data Anomalies
+#  Week 4 – Functional Dependencies, Redundancy & Data Anomalies
 
-## 📌 Objective
+##  Objective
 
 Analyze the functional dependencies of the Purplle Online Beauty Shopping Management System and identify data redundancy and database anomalies to improve the database design and maintain data integrity.
 
 ---
 
-## 📚 Topics Covered
+##  Topics Covered
 
 - Functional Dependencies
 - Primary Keys
@@ -200,7 +200,7 @@ Analyze the functional dependencies of the Purplle Online Beauty Shopping Manage
 
 ---
 
-## 📊 Tables Analyzed
+##  Tables Analyzed
 
 - Customer
 - Category
@@ -222,7 +222,7 @@ Analyze the functional dependencies of the Purplle Online Beauty Shopping Manage
 
 ---
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 - Identified functional dependencies for all database tables.
 - Analyzed redundant data and methods to reduce duplication.
@@ -231,16 +231,16 @@ Analyze the functional dependencies of the Purplle Online Beauty Shopping Manage
 - Prepared the database for normalization and implementation.
 
 ---
-# 📅 Week 5 – CRUD Operations
+#  Week 5 – CRUD Operations
 ---
 
-## 📌 Objective
+##  Objective
 
 To implement the basic **CRUD (Create, Read, Update, Delete)** operations using SQL on the Customer table of the Purplle Online Beauty Shopping Management System. This helps in managing customer information efficiently and demonstrates the core database operations.
 
 ---
 
-## 📚 Topics Covered
+##  Topics Covered
 
 - CREATE TABLE
 - INSERT Records
@@ -252,9 +252,9 @@ To implement the basic **CRUD (Create, Read, Update, Delete)** operations using 
 
 ---
 
-## 🛠 CRUD Operations Performed
+##  CRUD Operations Performed
 
-### ✅ Create (C)
+###  Create (C)
 - Created the **Customer** table.
 - Applied constraints such as:
   - Primary Key
@@ -262,22 +262,22 @@ To implement the basic **CRUD (Create, Read, Update, Delete)** operations using 
   - NOT NULL
   - CHECK Constraint
 
-### ✅ Read (R)
+###  Read (R)
 - Displayed all customer records.
 - Retrieved single and multiple customer records using SELECT queries.
 
-### ✅ Update (U)
+###  Update (U)
 - Updated customer details such as:
   - Phone Number
   - City
 
-### ✅ Delete (D)
+###  Delete (D)
 - Deleted customer records using the DELETE statement.
 - Removed records based on Customer ID.
 
 ---
 
-## 🗄 Table Used
+##  Table Used
 
 **Customer**
 
@@ -295,7 +295,7 @@ To implement the basic **CRUD (Create, Read, Update, Delete)** operations using 
 
 ---
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 - Created a database table using SQL.
 - Inserted multiple records into the table.
@@ -307,7 +307,7 @@ To implement the basic **CRUD (Create, Read, Update, Delete)** operations using 
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Oracle SQL Plus
 - SQL
@@ -316,7 +316,7 @@ To implement the basic **CRUD (Create, Read, Update, Delete)** operations using 
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 Week-5-CRUD-Operations/
