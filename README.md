@@ -500,6 +500,148 @@ SQL operations such as **INSERT, UPDATE, and SELECT** are used to manage seller 
 The **Seller and Inventory Management System** successfully maintains **seller-product information**, tracks **stock quantities**, identifies **available and unavailable products**, and generates **inventory status reports**.
 
 ---
+# WEEK 8 – ORDER AND ORDER DETAILS MANAGEMENT SYSTEM
+
+## Purplle Online Beauty Shopping Database Management System
+
+The **Purplle Online Beauty Shopping Database Management System** is designed to efficiently manage customer orders and order details.
+
+The system uses two related tables, **Orders** and **Order_Details**, to store and organize customer order information. Primary Key and Foreign Key constraints are used to maintain data integrity and establish relationships between customers, orders, products, and sellers.
+
+SQL operations such as **INSERT, UPDATE, and SELECT** are performed to manage order information. Customer order history and customer-wise order summary reports are generated to analyze customer purchases.
+
+---
+
+## 1. Objectives
+
+* Design tables for `Orders` and `Order_Details`.
+* Define Primary Key and Foreign Key relationships.
+* Manage customer product orders.
+* Store order date, quantity, and total amount.
+* Perform order insertion and modification operations.
+* Modify order amount and order date.
+* Modify order details such as quantity and unit price.
+* Generate customer order history reports.
+* Generate customer-wise order summary reports.
+* Maintain data integrity using constraints.
+
+---
+
+## 2. Database Tables
+
+### 2.1 Orders Table
+
+| Attribute    | Data Type    | Key | Description               |
+| ------------ | ------------ | --- | ------------------------- |
+| Order_ID     | NUMBER       | PK  | Unique order ID           |
+| Customer_ID  | NUMBER       | FK  | References Customer5      |
+| Coupon_ID    | NUMBER       | -   | Coupon used for the order |
+| Order_Date   | DATE         | -   | Date of the order         |
+| Total_Amount | NUMBER(10,2) | -   | Total order amount        |
+| Order_Status | VARCHAR2(30) | -   | Status of the order       |
+
+### 2.2 Order_Details Table
+
+| Attribute       | Data Type    | Key | Description               |
+| --------------- | ------------ | --- | ------------------------- |
+| Order_Detail_ID | NUMBER       | PK  | Unique order detail ID    |
+| Order_ID        | NUMBER       | FK  | References Orders         |
+| Product_ID      | NUMBER       | FK  | References PurplleProduct |
+| Seller_ID       | NUMBER       | FK  | References Seller         |
+| Quantity        | NUMBER       | -   | Quantity ordered          |
+| Unit_Price      | NUMBER(10,2) | -   | Price of one product      |
+
+---
+
+## 3. Table Relationships
+
+The database contains the following relationships:
+
+### Customer → Orders
+
+* `Customer5.Customer_ID` → Primary Key
+* `Orders.Customer_ID` → Foreign Key
+* `Orders.Customer_ID` references `Customer5.Customer_ID`
+* Relationship: **One-to-Many (1:M)**
+
+### Orders → Order_Details
+
+* `Orders.Order_ID` → Primary Key
+* `Order_Details.Order_ID` → Foreign Key
+* `Order_Details.Order_ID` references `Orders.Order_ID`
+* Relationship: **One-to-Many (1:M)**
+
+### PurplleProduct → Order_Details
+
+* `PurplleProduct.Product_ID` → Primary Key
+* `Order_Details.Product_ID` → Foreign Key
+* `Order_Details.Product_ID` references `PurplleProduct.Product_ID`
+
+### Seller → Order_Details
+
+* `Seller.Seller_ID` → Primary Key
+* `Order_Details.Seller_ID` → Foreign Key
+* `Order_Details.Seller_ID` references `Seller.Seller_ID`
+
+### Relationship Diagram
+
+```text
+CUSTOMER (1)
+      |
+      | 1:M
+      ▼
+   ORDERS (1)
+      |
+      | 1:M
+      ▼
+ORDER_DETAILS
+   /       \
+  /         \
+ ▼           ▼
+PURPLLEPRODUCT   SELLER
+```
+
+---
+
+
+---
+
+## 10. SQL Operations Used
+
+| Operation  | Purpose                           |
+| ---------- | --------------------------------- |
+| `INSERT`   | Add new orders and order details  |
+| `UPDATE`   | Modify existing order information |
+| `SELECT`   | Retrieve order information        |
+| `JOIN`     | Combine Orders and Order_Details  |
+| `COUNT()`  | Count customer orders             |
+| `SUM()`    | Calculate total amount            |
+| `GROUP BY` | Generate customer-wise summary    |
+| `ORDER BY` | Sort the report                   |
+| `COMMIT`   | Save database changes             |
+
+---
+
+
+
+
+
+---
+
+## 12. Result
+
+The **Order and Order Details Management System** successfully manages customer product orders and stores important order information such as:
+
+* Order Date
+* Quantity
+* Unit Price
+* Total Amount
+* Order Status
+
+Order insertion and modification operations are performed using SQL. Customer order history and customer-wise order summary reports provide organized information about customer purchases and order activity.
+
+---
+
 
 
 
