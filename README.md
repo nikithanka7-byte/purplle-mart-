@@ -128,7 +128,7 @@ Design the Entity Relationship (ER) diagrams for the Purplle Online Beauty Shopp
 - Cardinality
 - Overall ER Diagram
 
-### 🗂 Entities
+###  Entities
 
 - Customer
 - Category
@@ -641,7 +641,7 @@ The **Order and Order Details Management System** successfully manages customer 
 Order insertion and modification operations are performed using SQL. Customer order history and customer-wise order summary reports provide organized information about customer purchases and order activity.
 
 ---
-# WEEK 10 – PRODUCT REVIEW AND RATING MANAGEMENT SYSTEM
+# WEEK 9 – PRODUCT REVIEW AND RATING MANAGEMENT SYSTEM
 
 ##  Project Overview
 
