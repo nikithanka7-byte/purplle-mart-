@@ -641,6 +641,118 @@ The **Order and Order Details Management System** successfully manages customer 
 Order insertion and modification operations are performed using SQL. Customer order history and customer-wise order summary reports provide organized information about customer purchases and order activity.
 
 ---
+# WEEK 10 – PRODUCT REVIEW AND RATING MANAGEMENT SYSTEM
+
+##  Project Overview
+
+The **Product Review and Rating Management System** is a part of the **Purplle Online Beauty Shopping Database Management System**.
+
+This module is designed to manage **customer reviews, product ratings, feedback, and customer satisfaction**. It allows the database to store customer feedback, calculate average product ratings, and identify highly rated products.
+
+---
+
+##  Objectives
+
+* Create **Review** and **Rating** tables.
+* Store customer reviews and product ratings.
+* Maintain customer and product relationships using foreign keys.
+* Retrieve product review and rating details.
+* Calculate average product ratings.
+* Identify highly rated products.
+* Generate product rating reports.
+
+---
+
+## Technologies Used
+
+* **Database:** Oracle Database
+* **Language:** SQL
+* **Database Concept:** DBMS
+* **Functions Used:** `AVG()`, `COUNT()`, `GROUP BY`, `HAVING`, `ORDER BY`
+* **Tables:** Customer5, PurplleProduct, Review, Rating
+
+---
+
+##  Database Tables
+
+### 1. Review Table
+
+| Column      | Data Type     | Description               |
+| ----------- | ------------- | ------------------------- |
+| Review_ID   | NUMBER        | Unique ID for each review |
+| Customer_ID | NUMBER        | Customer ID               |
+| Product_ID  | NUMBER        | Product ID                |
+| Review_Text | VARCHAR2(500) | Customer feedback         |
+| Review_Date | DATE          | Date of review            |
+
+### 2. Rating Table
+
+| Column      | Data Type   | Description               |
+| ----------- | ----------- | ------------------------- |
+| Rating_ID   | NUMBER      | Unique ID for each rating |
+| Customer_ID | NUMBER      | Customer ID               |
+| Product_ID  | NUMBER      | Product ID                |
+| Rating      | NUMBER(2,1) | Rating from 1 to 5        |
+| Rating_Date | DATE        | Date of rating            |
+
+---
+
+##  Table Relationships
+
+```text
+CUSTOMER (1) ─────────── (M) REVIEW
+Customer_ID (PK) → Customer_ID (FK)
+
+CUSTOMER (1) ─────────── (M) RATING
+Customer_ID (PK) → Customer_ID (FK)
+
+PURPLLEPRODUCT (1) ───── (M) REVIEW
+Product_ID (PK) → Product_ID (FK)
+
+PURPLLEPRODUCT (1) ───── (M) RATING
+Product_ID (PK) → Product_ID (FK)
+```
+
+---
+
+
+
+
+
+---
+
+##  SQL Concepts Used
+
+| Concept        | Purpose                                  |
+| -------------- | ---------------------------------------- |
+| `CREATE TABLE` | Creates database tables                  |
+| `PRIMARY KEY`  | Uniquely identifies records              |
+| `FOREIGN KEY`  | Establishes relationships between tables |
+| `CHECK`        | Restricts rating values from 1 to 5      |
+| `INSERT`       | Adds rating records                      |
+| `JOIN`         | Combines rating and product information  |
+| `AVG()`        | Calculates average rating                |
+| `COUNT()`      | Counts total ratings                     |
+| `GROUP BY`     | Groups records by product                |
+| `HAVING`       | Filters grouped results                  |
+| `ORDER BY`     | Sorts the results                        |
+
+---
+## Result
+
+The Product Review and Rating Management System was successfully implemented.
+
+Review and Rating tables were created.
+Primary key and foreign key constraints were applied.
+Customer ratings were successfully stored.
+Product rating details were retrieved using JOIN.
+Average ratings were calculated using AVG().
+Highly rated products were identified using HAVING.
+Product rating reports were generated using COUNT() and AVG().
+
+
+
+
 
 
 
