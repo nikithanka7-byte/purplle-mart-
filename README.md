@@ -750,6 +750,23 @@ Average ratings were calculated using AVG().
 Highly rated products were identified using HAVING.
 Product rating reports were generated using COUNT() and AVG().
 
+---
+
+# WEEK 11 – SQL QUERY IMPLEMENTATION
+
+## Project Overview
+
+The **Purplle Online Beauty Shopping Database Management System** uses SQL queries to manage and retrieve product, customer, and order information.
+
+## Objectives
+
+* Retrieve product and customer details.
+* Filter and sort records using SQL commands.
+* Apply conditions such as `AND`, `OR`, `IN`, and `BETWEEN`.
+* Generate reports using aggregate functions.
+
+
+
 
 
 
