@@ -15,7 +15,7 @@ This project demonstrates the application of **Database Management System (DBMS)
 
 ---
 
-#  Week 1 – Requirement Analysis
+# Requirement Analysis
 
 ### Topics Covered
 
@@ -40,7 +40,7 @@ This project demonstrates the application of **Database Management System (DBMS)
 
 ---
 
-# Week 2 – Entity Analysis
+# Week 1 – Entity Analysis
 
 ###  Topics Covered
 
@@ -111,7 +111,7 @@ This project demonstrates the application of **Database Management System (DBMS)
 
 ---
 
-#  Week 3 – Entity Relationship (ER) Diagrams
+#  Week 2– Entity Relationship (ER) Diagrams
 
 ##  Objective
 
@@ -178,7 +178,7 @@ Design the Entity Relationship (ER) diagrams for the Purplle Online Beauty Shopp
 - Developed the overall ER diagram for the system.
 
 ---
-#  Week 4 – Functional Dependencies, Redundancy & Data Anomalies
+#  Week 3 – Functional Dependencies, Redundancy & Data Anomalies
 
 ##  Objective
 
@@ -231,7 +231,7 @@ Analyze the functional dependencies of the Purplle Online Beauty Shopping Manage
 - Prepared the database for normalization and implementation.
 
 ---
-#  Week 5 – CRUD Operations
+#  Week 4 – CRUD Operations
 ---
 
 ##  Objective
@@ -330,7 +330,7 @@ Week-5-CRUD-Operations/
 ```
 
 
-## WEEK 6 – PRODUCT AND CATEGORY MANAGEMENT SYSTEM
+## WEEK 5 – PRODUCT AND CATEGORY MANAGEMENT SYSTEM
 
 The Purplle Online Beauty Shopping Database Management System is designed to efficiently manage product and category information.
 
@@ -396,7 +396,7 @@ SQL operations such as **INSERT, UPDATE, DELETE, and SELECT** are performed on t
 **Category_ID (PK)**  →  **Category_ID (FK)**
 ```
 
-# **WEEK 7 – SELLER AND INVENTORY MANAGEMENT SYSTEM**
+# **WEEK 6 – SELLER AND INVENTORY MANAGEMENT SYSTEM**
 
 ## **1. Introduction**
 
@@ -500,7 +500,7 @@ SQL operations such as **INSERT, UPDATE, and SELECT** are used to manage seller 
 The **Seller and Inventory Management System** successfully maintains **seller-product information**, tracks **stock quantities**, identifies **available and unavailable products**, and generates **inventory status reports**.
 
 ---
-# WEEK 8 – ORDER AND ORDER DETAILS MANAGEMENT SYSTEM
+# WEEK 7 – ORDER AND ORDER DETAILS MANAGEMENT SYSTEM
 
 ## Purplle Online Beauty Shopping Database Management System
 
@@ -641,7 +641,7 @@ The **Order and Order Details Management System** successfully manages customer 
 Order insertion and modification operations are performed using SQL. Customer order history and customer-wise order summary reports provide organized information about customer purchases and order activity.
 
 ---
-# WEEK 9 – PRODUCT REVIEW AND RATING MANAGEMENT SYSTEM
+# WEEK 8 – PRODUCT REVIEW AND RATING MANAGEMENT SYSTEM
 
 ##  Project Overview
 
@@ -752,7 +752,7 @@ Product rating reports were generated using COUNT() and AVG().
 
 ---
 
-# WEEK 11 – SQL QUERY IMPLEMENTATION
+# WEEK 09 – SQL QUERY IMPLEMENTATION
 
 ## Project Overview
 
@@ -764,6 +764,56 @@ The **Purplle Online Beauty Shopping Database Management System** uses SQL queri
 * Filter and sort records using SQL commands.
 * Apply conditions such as `AND`, `OR`, `IN`, and `BETWEEN`.
 * Generate reports using aggregate functions.
+
+# Purplle Online Beauty Shopping Database Management System
+
+## Week 10 – Advanced SQL Query System
+
+### Project Overview
+This project focuses on implementing advanced SQL queries in the Purplle Online Beauty Shopping Database Management System using Oracle SQL. It demonstrates the use of subqueries, nested queries, aggregate functions, and complex SQL statements to retrieve meaningful information from multiple database tables.
+
+### Objectives
+- To understand and implement subqueries and nested queries.
+- To retrieve products above and below the average price.
+- To identify customers with maximum purchases.
+- To find orders above the average order value.
+- To analyze product sales using advanced SQL queries.
+- To generate customer-wise and category-wise sales reports.
+
+### Database Tables Used
+1. Customer5
+2. Category
+3. PurplleProduct
+4. Seller
+5. Inventory
+6. Orders
+7. Order_Details
+8. Payment
+
+### SQL Concepts Used
+- Subqueries
+- Nested Queries
+- Single-row Subqueries
+- Multiple-row Subqueries
+- Aggregate Functions
+- GROUP BY
+- HAVING
+- ORDER BY
+- JOIN Operations
+
+### Queries Implemented
+1. Display orders above the average order amount.
+2. Display products above the average price.
+3. Display products below the average price.
+4. Identify customers with maximum purchases.
+5. Display customers who placed orders above the average order value.
+6. Find products whose sales are above average.
+7. Generate a customer purchase report.
+8. Generate an advanced product sales report.
+9. Generate a category-wise advanced sales report.
+
+---
+
 
 
 
